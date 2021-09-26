@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title> TRY|CATCH </title>
+    <link rel = "stylesheet" href = "./css/index.css"/>
+    <script src = "./js/index.js" ></script>
+  </head>
+
+  <body onresize="adjustScreenSize()">
+      <div class= "painel">
+        <div class="vidas">
+
+          <img id= "p1" src= "../images/coracao_cheio.png" />
+          <img id= "p2" src= "../images/coracao_cheio.png" />
+          <img id= "p3" src= "../images/coracao_cheio.png" />
+        </div>
+        <div  class= "tempo">Tempo restante: <spa id="cronus"></span> </div>
+      </div>
+    <script>
+     
+      document.getElementById('cronus').innerHTML = gametimer
+
+      var inseto = setInterval(function () {
+        RadomPosition()
+      }, levelTime ) 
+    </script>
+  </body>
+</html>
